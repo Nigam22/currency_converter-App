@@ -1,5 +1,4 @@
 
-
 import 'package:flutter/material.dart';
 
 //1. create a variable that stores a currency value.
@@ -23,7 +22,6 @@ class CurrencyConverterMaterialPage extends StatefulWidget {
 
    @override
   Widget build(BuildContext context) {
-     print('rebuilt');
     final border = OutlineInputBorder(
               borderSide: const BorderSide(
               color: Color.fromARGB(255, 0, 0, 0),

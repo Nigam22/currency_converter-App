@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'currency_converter_material_page.dart';
+import 'currency_converter_cupertino_page.dart';
 
 void main() {
-  runApp(const Myapp());
+  runApp(const MyApp());
 }
 
-//types of widgets
-//statelesswidget
-//statefulwidgets
-
-//state
-
-// 1. Material Design created by Google
-// 2. Cupertino Design created by Apple
-
-class Myapp extends StatelessWidget {
-  const Myapp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: CurrencyConverterMaterialPage());
+    return const MaterialApp(
+      home: CurrencyConverterMaterialPage(),
+      );
+  }
+}
+
+class MyCupertinoApp extends StatelessWidget {
+  const MyCupertinoApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const CupertinoApp(
+      home: CurrencyConverterCupertinoPage(),
+      );
   }
 }
